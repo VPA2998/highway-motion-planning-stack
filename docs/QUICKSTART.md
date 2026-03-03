@@ -176,3 +176,5 @@ num_vehicles = 10  # Instead of 20
 🔮 Try modifying parameters (road length, traffic density, seed)
 
 🤝 Fork and extend for your own scenarios (merging, exits, construction zones)
+
+---
