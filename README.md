@@ -66,7 +66,8 @@ jupyter notebook
 ```
 
 ### 5. Open and run the notebook
-Navigate to notebooks/01_highway_motion_planning_full_stack.ipynb and run all cells.
+
+- Navigate to [notebooks](notebooks/Project3_Motion_Planning.ipynb) and run all cells.
 ---
 
 ## 🎯 Key Features
