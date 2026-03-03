@@ -1,0 +1,6 @@
+```bash
+touch outputs/.gitkeep
+touch data/.gitkeep
+touch src/.gitkeep
+touch docs/.gitkeep
+```

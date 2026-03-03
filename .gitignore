@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+env/
+
+# Jupyter
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# Project outputs
+outputs/*.gif
+outputs/*.mp4
+outputs/*.csv
+!outputs/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data (keep folder, ignore large files)
+data/*.pkl
+data/*.npy
+data/raw/*
+!data/raw/.gitkeep
