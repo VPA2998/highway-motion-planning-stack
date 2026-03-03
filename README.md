@@ -37,11 +37,20 @@ This project implements a complete motion planning stack for autonomous highway 
 ```
 highway-motion-planning-stack/
 ├── notebooks/
-│ └── 01_highway_motion_planning_full_stack.ipynb # Main implementation
-├── src/ # Future: modular Python packages
-├── data/ # Map data, scenario configs
+│ └── 01_highway_motion_planning_full_stack.ipynb # Monolithic reference implementation
+├── src/ # Modular Python packages
+│ ├── init.py # Package initialization
+│ ├── map_module.py # Lanelet map, A* global routing
+│ ├── vehicle.py # Vehicle class, dynamic bicycle model, scenario creation
+│ ├── idm.py # Intelligent Driver Model (longitudinal control)
+│ ├── behavior.py # FSM behavior planner (CRUISE, FOLLOW, STOP, lane changes)
+│ ├── frenet.py # Frenet lattice planner (quintic polynomials)
+│ ├── collision.py # SAT-based oriented rectangle collision detection
+│ └── visualization.py # Plotting, GIF generation, CSV export
+├── data/ # Map data, scenario configurations
 ├── outputs/ # Generated GIFs, CSV logs
-├── docs/ # Documentation, diagrams
+│ └── demo/ # Demo assets for README
+├── docs/ # Technical documentation, architecture diagrams
 ├── .gitignore
 ├── requirements.txt
 └── README.md
@@ -129,5 +138,5 @@ The notebook generates:
 - CSV Log: Timestamped trajectory data (t, x, y, lane_index, speed, behavior)
 
 - Gradio App: Interactive scenario exploration (optional)
-
+---
 
