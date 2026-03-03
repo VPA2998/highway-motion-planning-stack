@@ -21,6 +21,17 @@ This project implements a complete motion planning stack for autonomous highway 
 
 ---
 
+## 🎬 Demo
+
+![Highway Simulation Demo](outputs/demo/highway_simulation_demo.gif)
+
+*Figure: Autonomous ego vehicle (red) navigating highway traffic (blue vehicles). The planner uses:*
+- *FSM behavior planning (CRUISE, FOLLOW, STOP, lane changes)*
+- *IDM longitudinal control for car-following*
+- *Frenet lattice trajectory generation (gray candidates, green selected)*
+- *Oriented rectangle collision avoidance via Separating Axis Theorem (SAT)*
+---
+
 ## 📁 Project Structure
 
 ```

@@ -19,6 +19,10 @@ outputs/*.mp4
 outputs/*.csv
 !outputs/.gitkeep
 
+# Allow demo GIFs
+!outputs/demo/*.gif
+!outputs/demo/.gitkeep
+
 # IDE
 .vscode/
 .idea/
